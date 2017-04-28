@@ -22,16 +22,16 @@
                 <param name="ios-package" value="Diagnostic" />
             </feature>
         </config-file>
-        
+
         <!-- Default usage descriptions: override as necessary in .plist -->
         <config-file target="*-Info.plist" parent="NSLocationAlwaysUsageDescription">
             <string>This app requires constant access to your location in order to track your position, even when the screen is off.</string>
         </config-file>
-        
+
         <config-file target="*-Info.plist" parent="NSLocationWhenInUseUsageDescription">
             <string>This app requires access to your location when the screen is on and the app is displayed.</string>
         </config-file>
-        
+
         <config-file target="*-Info.plist" parent="NSCalendarsUsageDescription">
             <string>This app requires calendar access to function properly.</string>
         </config-file>
@@ -92,7 +92,7 @@
         </config-file>
 
         <framework src="com.android.support:support-v4:+" />
-        <framework src="com.android.support:appcompat-v7:+" />
+        <framework src="com.android.support:appcompat-v7:23+" />
 
         <js-module src="www/android/diagnostic.js" name="Diagnostic">
             <clobbers target="cordova.plugins.diagnostic" />
